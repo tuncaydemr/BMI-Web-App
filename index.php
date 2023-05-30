@@ -16,12 +16,12 @@
       <div class="grid">
         <h4 class="mt-4 mb-5 text-center">Body Mass Calculator</h4>
         <div class="mb-4 w-50 m-auto">
-          <label for="" class="form-label">Weight</label>
-          <input type="text" class="form-control" name="" id="" placeholder="Enter Your Weight">
+          <label for="weight" class="form-label">Weight</label>
+          <input type="text" class="form-control" name="weight" id="weight" placeholder="Enter Your Weight">
         </div>
         <div class="mb-4 w-50 m-auto">
-          <label for="" class="form-label">Height</label>
-          <input type="text" class="form-control" name="" id="" placeholder="Enter Your Weight">
+          <label for="height" class="form-label">Height</label>
+          <input type="text" class="form-control" name="height" id="height" placeholder="Enter Your Weight">
         </div>
         <button type="button" class="btn btn-primary w-50">Button</button>
       </div>
