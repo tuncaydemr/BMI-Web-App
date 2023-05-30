@@ -22,8 +22,12 @@
           <label for="height" class="form-label">Height</label>
           <input type="text" class="form-control" name="height" placeholder="Enter Your Height" value="<?php echo isset($height) ? $height : ''; ?>" required>
         </div>
+        <div class="mb-4 w-50 m-auto">
+          <label for="bmi" class="form-label">BMI</label>
+          <input type="text" class="form-control" name="bmi" value="<?php echo $bmi; ?>" disabled>
+        </div>
         <div class="d-flex justify-content-center mt-3 mb-5">
-          <button type="submit" name="submit" id="submit" class="btn btn-primary w-50 my-4">Button</button>
+          <button type="submit" name="submit" class="btn btn-primary w-50 my-4">Button</button>
         </div>
       </div>
     </div>
