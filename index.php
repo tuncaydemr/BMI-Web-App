@@ -2,9 +2,14 @@
 if (isset($_POST['submit'])) {
   $weight = $_POST['weight'];
   $height = $_POST['height'];
+  $bmi = $_POST['bmi'];
 
   $height /= 100;
   $bmi = $weight / ($height * $height);
+
+  if ($weight != "" && $height != "") {
+    
+  }
 }
 
 
@@ -34,7 +39,7 @@ if (isset($_POST['submit'])) {
           <label for="height" class="form-label">Height</label>
           <input type="text" class="form-control" name="height" id="height" placeholder="Enter Your Height" value="<?php echo isset($height) ? $height : ''; ?>" >
         </div>
-        <div class="mb-4 w-50 m-auto">
+        <div class="mb-4 w-50 m-auto" style="display: none">
           <label for="bmi" class="form-label">BMI</label>
           <input type="text" class="form-control" name="bmi" value="<?php echo $bmi; ?>" disabled>
         </div>
