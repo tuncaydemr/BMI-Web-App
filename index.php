@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
 </head>
 
-<body>
+<body style="background: black;">
   <form action="index.php" method="post">
     <div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
       <div class="card w-50">
