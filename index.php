@@ -39,11 +39,33 @@
           <label for="bmi" class="form-label">BMI</label>
           <input type="text" class="form-control" name="bmi" id="bmi" value="<?php echo $bmi; ?>" disabled>
         </div>
+        <?php
+          if ($bmi >= 18.5 && $bmi < 25):
+        ?>
         <div class="card m-auto w-50">
           <div class="card-body bg-success">
             <p class="card-text text-white">Text</p>
           </div>
         </div>
+        <?php
+          elseif ($bmi >= 25 && $bmi < 30):
+        ?>
+        <div class="card m-auto w-50">
+          <div class="card-body bg-success">
+            <p class="card-text text-white">Text</p>
+          </div>
+        </div>
+        <?php
+          elseif ($bmi >= 30 && $bmi < 40):
+        ?>
+        <div class="card m-auto w-50">
+          <div class="card-body bg-success">
+            <p class="card-text text-white">Text</p>
+          </div>
+        </div>
+        <?php
+          endif;
+        ?>
         <div class="d-flex justify-content-center mt-3 mb-5">
           <button type="submit" name="submit" class="btn btn-primary w-50 my-4">Submit</button>
         </div>
