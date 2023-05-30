@@ -35,9 +35,9 @@ if (isset($_POST['submit'])) {
           <label for="height" class="form-label">Height</label>
           <input type="text" class="form-control" name="height" id="height" pattern="[0-9]*" placeholder="Enter Your Height" value="<?php echo $height; ?>">
         </div>
-        <div class="mb-4 w-50 m-auto" style="display: none;">
+        <div class="mb-4 w-50 m-auto bmi" style="display: none;">
           <label for="bmi" class="form-label">BMI</label>
-          <input type="text" class="form-control" name="bmi" id="bmi" value="<?php echo $bmi; ?>" disabled>
+          <input type="text" class="form-control" name="bmi" value="<?php echo $bmi; ?>" disabled>
         </div>
         <div class="d-flex justify-content-center mt-3 mb-5">
           <button type="submit" name="submit" class="btn btn-primary w-50 my-4">Submit</button>
@@ -48,13 +48,16 @@ if (isset($_POST['submit'])) {
 
   <script>
     $(() => {
-      $weight = $('#weight').val();
-      $height = $('#height').val();
-      if (($weight != "") && ($height != "")) {
-        $('#bmi').css({
-          display: 'block'
-        });
-      }
+      $('button').click(function () {
+        let $weight = $('#weight').val();
+        let $height = $('#height').val();
+
+        if (($weight != "") && ($height != "")) {
+          $('.bmi').css({
+            display: 'block'
+          });
+        }
+      });
     });
   </script>
 </body>
