@@ -45,7 +45,7 @@ if (isset($_POST['submit'])) {
         ?>
             <div class="card m-auto w-50">
               <div class="card-body bg-danger">
-                <p class="card-text text-white text-center text-uppercase fs-6">Mild Thinness</p>
+                <p class="card-text text-white text-center text-uppercase fs-5">Mild Thinness</p>
               </div>
             </div>
           <?php
@@ -53,7 +53,7 @@ if (isset($_POST['submit'])) {
           ?>
             <div class="card m-auto w-50">
               <div class="card-body bg-success">
-                <p class="card-text text-white text-center text-uppercase fs-6">Normal</p>
+                <p class="card-text text-white text-center text-uppercase fs-5">Normal</p>
               </div>
             </div>
           <?php
@@ -61,7 +61,7 @@ if (isset($_POST['submit'])) {
           ?>
             <div class="card m-auto w-50">
               <div class="card-body bg-warning">
-                <p class="card-text text-white text-center text-uppercase fs-6">Overweight</p>
+                <p class="card-text text-black text-center text-uppercase fs-5">Overweight</p>
               </div>
             </div>
           <?php
@@ -69,7 +69,7 @@ if (isset($_POST['submit'])) {
           ?>
             <div class="card m-auto w-50">
               <div class="card-body bg-danger">
-                <p class="card-text text-white text-center text-uppercase fs-6">Obese Class &#8544;</p>
+                <p class="card-text text-white text-center text-uppercase fs-5">Obese Class &#8544;</p>
               </div>
             </div>
           <?php
@@ -77,7 +77,7 @@ if (isset($_POST['submit'])) {
           ?>
             <div class="card m-auto w-50">
               <div class="card-body bg-danger">
-                <p class="card-text text-white text-center text-uppercase fs-6">Obese Class &#8545;</p>
+                <p class="card-text text-white text-center text-uppercase fs-5">Obese Class &#8545;</p>
               </div>
             </div>
         <?php
@@ -102,8 +102,6 @@ if (isset($_POST['submit'])) {
       });
     </script>
   </form>
-
-
 </body>
 
 </html>
