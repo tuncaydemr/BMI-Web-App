@@ -1,15 +1,15 @@
 <?php
-  session_start();
 
-  if (isset($_POST['submit'])) {
-    $weight = $_POST['weight'];
-    $height = $_POST['height'];
 
-    if ($weight != "" && $height != "") {
-      $bmi = $weight / ($height * $height);
-      $bmi = round($bmi * 10000, 2);
-    }
+if (isset($_POST['submit'])) {
+  $weight = $_POST['weight'];
+  $height = $_POST['height'];
+
+  if ($weight != "" && $height != "") {
+    $bmi = $weight / ($height * $height);
+    $bmi = round($bmi * 10000, 2);
   }
+}
 ?>
 
 <!DOCTYPE html>
@@ -39,29 +39,28 @@
         </div>
         <div class="mb-4 w-50 m-auto bmi">
           <label for="bmi" class="form-label">BMI</label>
-          <input type="text" class="form-control" name="bmi" value="<?php echo $bmi; ?>" disabled>
+          <input type="text" class="form-control" name="bmi" id="bmi" value="<?php echo $bmi; ?>" disabled>
         </div>
         <div class="d-flex justify-content-center mt-3 mb-5">
           <button type="submit" name="submit" class="btn btn-primary w-50 my-4">Submit</button>
         </div>
       </div>
     </div>
-  </form>
-
-  <script>
-    $(() => {
-
+    <script>
+      $(() => {
         let $weight = $('#weight').val();
         let $height = $('#height').val();
 
-        if (($weight == "") && ($height == "")) {
+        if (($weight == "") || ($height == "")) {
           $('.bmi').addClass('d-none');
         } else {
           $('.bmi').addClass('d-block');
         }
+      });
+    </script>
+  </form>
 
-    });
-  </script>
+
 </body>
 
 </html>
