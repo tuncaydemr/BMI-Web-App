@@ -1,28 +1,28 @@
 <?php
-if (isset($_POST['submit'])) {
-  $weight = $_POST['weight'];
-  $height = $_POST['height'];
+  if (isset($_POST['submit'])) {
+    $weight = $_POST['weight'];
+    $height = $_POST['height'];
 
-  $errors = [];
-  if (empty($weight)) {
-    $errors[] = 'Please enter weight.';
-  }
-  if (empty($height)) {
-    $errors[] = 'Please enter height.';
-  }
+    $errors = [];
+    if (empty($weight)) {
+      $errors[] = 'Please enter weight.';
+    }
+    if (empty($height)) {
+      $errors[] = 'Please enter height.';
+    }
 
-  if (empty($errors)) {
-    $height = $height / 100;
-    $bmi = $weight / ($height * $height);
-    $bmi = round($bmi, 2);
+    if (empty($errors)) {
+      $height = $height / 100;
+      $bmi = $weight / ($height * $height);
+      $bmi = round($bmi, 2);
 
-    echo "<div>Your BMI is $bmi.</div>";
-  } else {
-    foreach ($errors as $error) {
-      echo "<div>$error</div>";
+      echo "<div>Your BMI is $bmi.</div>";
+    } else {
+      foreach ($errors as $error) {
+        echo "<div>$error</div>";
+      }
     }
   }
-}
 
 
 ?>
@@ -45,15 +45,15 @@ if (isset($_POST['submit'])) {
         <h3 class="my-5 text-center">Body Mass Calculator</h3>
         <div class="mb-4 w-50 m-auto">
           <label for="weight" class="form-label">Weight</label>
-          <input type="number" class="form-control" name="weight" placeholder="Enter Your Weight" value="<?php echo isset($weight) ? $weight : ''; ?>" required>
+          <input type="text" class="form-control" name="weight" placeholder="Enter Your Weight" value="<?php echo isset($weight) ? $weight : ''; ?>" required>
         </div>
         <div class="mb-4 w-50 m-auto">
           <label for="height" class="form-label">Height</label>
-          <input type="number" class="form-control" name="height" placeholder="Enter Your Height" value="<?php echo isset($height) ? $height : ''; ?>" required>
+          <input type="text" class="form-control" name="height" placeholder="Enter Your Height" value="<?php echo isset($height) ? $height : ''; ?>" required>
         </div>
         <div class="mb-4 w-50 m-auto">
           <label for="bmi" class="form-label">BMI</label>
-          <input type="number" class="form-control" name="bmi" value="<?php echo $bmi; ?>" disabled>
+          <input type="text" class="form-control" name="bmi" value="<?php echo $bmi; ?>" disabled>
         </div>
         <div class="d-flex justify-content-center mt-3 mb-5">
           <button type="submit" name="submit" class="btn btn-primary w-50 my-4">Button</button>
