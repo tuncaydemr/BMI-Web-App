@@ -2,7 +2,9 @@
   height: 50rem;
 }
 
-.card {
+.grid {
   width: 50%;
   height: auto;
+  border: 1px solid gray;
+  border-radius: 1rem;
 }
