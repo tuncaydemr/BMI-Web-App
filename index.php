@@ -46,6 +46,13 @@ if (isset($_POST['submit'])) {
   </form>
 
   <script>
+    $(() => {
+      if (('#weight' != "") && ('#height' != "")) {
+        $('#bmi').css({
+          display: 'block'
+        })
+      }
+    })
   </script>
 </body>
 
