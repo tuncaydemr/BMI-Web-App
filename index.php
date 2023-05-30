@@ -3,23 +3,8 @@ if (isset($_POST['submit'])) {
   $weight = $_POST['weight'];
   $height = $_POST['height'];
 
-  $errors = [];
-  if (empty($weight)) {
-    $errors[] = 'Please enter weight.';
-  }
-  if (empty($height)) {
-    $errors[] = 'Please enter height.';
-  }
-
-  if (empty($errors)) {
-    $height = $height / 100;
-    $bmi = $weight / ($height * $height);
-    $bmi = round($bmi, 2);
-  } else {
-    foreach ($errors as $error) {
-      echo "<div>$error</div>";
-    }
-  }
+  $height /= 100;
+  $bmi = $weight / ($height * $height);
 }
 
 
