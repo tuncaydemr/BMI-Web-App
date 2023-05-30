@@ -1,13 +1,13 @@
 <?php
-  if (isset($_POST['submit'])) {
-    $weight = $_POST['weight'];
-    $height = $_POST['height'];
+if (isset($_POST['submit'])) {
+  $weight = $_POST['weight'];
+  $height = $_POST['height'];
 
-    if ($weight != "" && $height != "") {
-      $bmi = $weight / ($height * $height);
-      $bmi = round($bmi * 10000, 2);
-    }
+  if ($weight != "" && $height != "") {
+    $bmi = $weight / ($height * $height);
+    $bmi = round($bmi * 10000, 2);
   }
+}
 ?>
 
 <!DOCTYPE html>
@@ -40,34 +40,44 @@
           <input type="text" class="form-control" name="bmi" id="bmi" value="<?php echo $bmi; ?>" disabled>
         </div>
         <?php
-          if ($bmi >= 18.5 && $bmi < 25):
+        if ($weight != "" && $height != "") :
+          if ($bmi < 18.5) {
         ?>
-          <div class="card m-auto w-50">
-            <div class="card-body bg-success">
-              <p class="card-text text-white">Text</p>
+            <div class="card m-auto w-50">
+              <div class="card-body bg-danger">
+                <p class="card-text text-white text-center text-uppercase fs-5">Skinny</p>
+              </div>
             </div>
-          </div>
-        <?php
-          elseif ($bmi >= 25 && $bmi < 30):
-        ?>
-          <div class="card m-auto w-50">
-            <div class="card-body bg-success">
-              <p class="card-text text-white">Text</p>
+          <?php
+          } elseif ($bmi >= 18.5 && $bmi < 25) {
+          ?>
+            <div class="card m-auto w-50">
+              <div class="card-body bg-success">
+                <p class="card-text text-white text-center text-uppercase fs-5">Normal</p>
+              </div>
             </div>
-          </div>
-        <?php
-          elseif ($bmi >= 30 && $bmi < 40):
-        ?>
-          <div class="card m-auto w-50">
-            <div class="card-body bg-success">
-              <p class="card-text text-white">Text</p>
+          <?php
+          } elseif ($bmi >= 25 && $bmi < 30) {
+          ?>
+            <div class="card m-auto w-50">
+              <div class="card-body bg-success">
+                <p class="card-text text-white text-center text-uppercase fs-5">Text</p>
+              </div>
             </div>
-          </div>
+          <?php
+          } elseif ($bmi >= 30 && $bmi < 40) {
+          ?>
+            <div class="card m-auto w-50">
+              <div class="card-body bg-success">
+                <p class="card-text text-white text-center text-uppercase fs-5">Text</p>
+              </div>
+            </div>
         <?php
-          endif;
+          }
+        endif;
         ?>
         <div class="d-flex justify-content-center mt-3 mb-5">
-          <button type="submit" name="submit" class="btn btn-primary w-50 my-4">Submit</button>
+          <button type="submit" name="submit" class="btn btn-primary w-50 my-4 py-3">Submit</button>
         </div>
       </div>
     </div>
