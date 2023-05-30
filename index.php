@@ -6,6 +6,7 @@ if (isset($_POST['submit'])) {
 
   $height /= 100;
   $bmi = $weight / ($height * $height);
+  $bmi = round($bmi, 2);
 }
 
 
