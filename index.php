@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <form>
+  <form action="index.php" method="post">
     <div class="container d-flex align-items-center justify-content-center">
       <div class="card d-flex justify-content-center">
         <h4 class="mt-3 mb-5 text-center">Body Mass Calculator</h4>
