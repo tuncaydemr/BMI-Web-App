@@ -17,11 +17,11 @@
         <h4 class="mt-4 mb-5 text-center">Body Mass Calculator</h4>
         <div class="mb-4 w-50 m-auto">
           <label for="weight" class="form-label">Weight</label>
-          <input type="text" class="form-control" name="weight" id="weight" placeholder="Enter Your Weight">
+          <input type="text" class="form-control" name="weight" id="weight" placeholder="Enter Your Weight" required>
         </div>
         <div class="mb-4 w-50 m-auto">
           <label for="height" class="form-label">Height</label>
-          <input type="text" class="form-control" name="height" id="height" placeholder="Enter Your Height">
+          <input type="text" class="form-control" name="height" id="height" placeholder="Enter Your Height" required>
         </div>
         <button type="button" class="btn btn-primary w-50">Button</button>
       </div>
