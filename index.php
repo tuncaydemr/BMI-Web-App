@@ -35,9 +35,9 @@ if (isset($_POST['submit'])) {
           <label for="height" class="form-label">Height</label>
           <input type="text" class="form-control" name="height" id="height" pattern="\d{3}" placeholder="Enter Your Height" value="<?php echo isset($height) ? $height : ''; ?>">
         </div>
-        <div class="mb-4 w-50 m-auto">
+        <div class="mb-4 w-50 m-auto" style="display: none">
           <label for="bmi" class="form-label">BMI</label>
-          <input type="text" class="form-control" name="bmi" id="bmi" value="<?php echo $bmi; ?>">
+          <input type="text" class="form-control" name="bmi" id="bmi" value="<?php echo $bmi; ?>" disabled>
         </div>
         <div class="d-flex justify-content-center mt-3 mb-5">
           <button type="submit" name="submit" class="btn btn-primary w-50 my-4">Button</button>
