@@ -1,14 +1,12 @@
 <?php
-if (isset($_POST['submit'])) {
-  $weight = $_POST['weight'];
-  $height = $_POST['height'];
+  if (isset($_POST['submit'])) {
+    $weight = $_POST['weight'];
+    $height = $_POST['height'];
 
-  $height /= 100;
-  $bmi = $weight / ($height * $height);
-  $bmi = round($bmi, 2);
-}
-
-
+    $height /= 100;
+    $bmi = $weight / ($height * $height);
+    $bmi = round($bmi, 2);
+  }
 ?>
 
 <!DOCTYPE html>
