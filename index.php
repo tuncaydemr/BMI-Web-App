@@ -1,28 +1,28 @@
 <?php
-  if (isset($_POST['submit'])) {
-    $weight = $_POST['weight'];
-    $height = $_POST['height'];
+if (isset($_POST['submit'])) {
+  $weight = $_POST['weight'];
+  $height = $_POST['height'];
 
-    $errors = [];
-    if (empty($weight)) {
-      $errors[] = 'Please enter weight.';
-    }
-    if (empty($height)) {
-      $errors[] = 'Please enter height.';
-    }
+  $errors = [];
+  if (empty($weight)) {
+    $errors[] = 'Please enter weight.';
+  }
+  if (empty($height)) {
+    $errors[] = 'Please enter height.';
+  }
 
-    if (empty($errors)) {
-      $height = $height / 100;
-      $bmi = $weight / ($height * $height);
-      $bmi = round($bmi, 2);
+  if (empty($errors)) {
+    $height = $height / 100;
+    $bmi = $weight / ($height * $height);
+    $bmi = round($bmi, 2);
 
-      echo "<div>Your BMI is $bmi.</div>";
-    } else {
-      foreach ($errors as $error) {
-        echo "<div>$error</div>";
-      }
+    echo "<div>Your BMI is $bmi.</div>";
+  } else {
+    foreach ($errors as $error) {
+      echo "<div>$error</div>";
     }
   }
+}
 
 
 ?>
@@ -45,7 +45,7 @@
         <h3 class="my-5 text-center">Body Mass Calculator</h3>
         <div class="mb-4 w-50 m-auto">
           <label for="weight" class="form-label">Weight</label>
-          <input type="text" class="form-control" name="weight" pattern="[0-9]{3}" placeholder="Enter Your Weight" value="<?php echo isset($weight) ? $weight : ''; ?>" required>
+          <input type="text" class="form-control" name="weight" pattern="\d{3}" placeholder="Enter Your Weight" value="<?php echo isset($weight) ? $weight : ''; ?>" required>
         </div>
         <div class="mb-4 w-50 m-auto">
           <label for="height" class="form-label">Height</label>
