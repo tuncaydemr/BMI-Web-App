@@ -60,7 +60,7 @@ if (isset($_POST['submit'])) {
           } elseif ($bmi >= 25 && $bmi < 30) {
           ?>
             <div class="card m-auto w-50">
-              <div class="card-body bg-success">
+              <div class="card-body bg-warning">
                 <p class="card-text text-white text-center text-uppercase fs-6">Overweight</p>
               </div>
             </div>
@@ -68,8 +68,16 @@ if (isset($_POST['submit'])) {
           } elseif ($bmi >= 30 && $bmi < 40) {
           ?>
             <div class="card m-auto w-50">
-              <div class="card-body bg-success">
+              <div class="card-body bg-danger">
                 <p class="card-text text-white text-center text-uppercase fs-6">Obese Class &#8544;</p>
+              </div>
+            </div>
+          <?php
+          } else {
+          ?>
+            <div class="card m-auto w-50">
+              <div class="card-body bg-danger">
+                <p class="card-text text-white text-center text-uppercase fs-6">Obese Class &#8545;</p>
               </div>
             </div>
         <?php
