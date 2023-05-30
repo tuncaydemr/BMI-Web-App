@@ -29,13 +29,13 @@ if (isset($_POST['submit'])) {
         <h3 class="my-5 text-center">Body Mass Calculator</h3>
         <div class="mb-4 w-50 m-auto">
           <label for="weight" class="form-label">Weight</label>
-          <input type="text" class="form-control" name="weight" id="weight" pattern="[0-9]*" placeholder="Enter Your Weight" value="<?php echo $weight; ?>">
+          <input type="text" class="form-control" name="weight" id="weight" pattern="[0-9]*" placeholder="Enter Your Weight" value="<?php echo isset($weight) ? $weight : ''; ?>">
         </div>
         <div class="mb-4 w-50 m-auto">
           <label for="height" class="form-label">Height</label>
-          <input type="text" class="form-control" name="height" id="height" pattern="[0-9]*" placeholder="Enter Your Height" value="<?php echo $height; ?>">
+          <input type="text" class="form-control" name="height" id="height" pattern="[0-9]*" placeholder="Enter Your Height" value="<?php echo isset($height) ? $height : ''; ?>">
         </div>
-        <div class="mb-4 w-50 m-auto bmi" style="display: none;">
+        <div class="mb-4 w-50 m-auto bmi">
           <label for="bmi" class="form-label">BMI</label>
           <input type="text" class="form-control" name="bmi" value="<?php echo $bmi; ?>" disabled>
         </div>
@@ -48,16 +48,16 @@ if (isset($_POST['submit'])) {
 
   <script>
     $(() => {
-      $('button').click(function () {
+
         let $weight = $('#weight').val();
         let $height = $('#height').val();
 
-        if (($weight != "") && ($height != "")) {
-          $('.bmi').css({
-            display: 'block'
-          });
+        if (($weight == "") && ($height == "")) {
+          $('.bmi').addClass('d-none');
+        } else {
+          $('.bmi').addClass('d-block');
         }
-      });
+
     });
   </script>
 </body>
