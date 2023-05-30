@@ -1,13 +1,15 @@
 <?php
-if (isset($_POST['submit'])) {
-  $weight = $_POST['weight'];
-  $height = $_POST['height'];
+  session_start();
 
-  if ($weight != "" && $height != "") {
-    $bmi = $weight / ($height * $height);
-    $bmi = round($bmi * 10000, 2);
+  if (isset($_POST['submit'])) {
+    $weight = $_POST['weight'];
+    $height = $_POST['height'];
+
+    if ($weight != "" && $height != "") {
+      $bmi = $weight / ($height * $height);
+      $bmi = round($bmi * 10000, 2);
+    }
   }
-}
 ?>
 
 <!DOCTYPE html>
