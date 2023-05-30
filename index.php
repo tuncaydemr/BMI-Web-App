@@ -14,7 +14,7 @@
   <form>
     <div class="container d-flex align-items-center justify-content-center my-3">
       <div class="card text-center">
-        <h4>Body Mass Calculator</h4>
+        <h4 class="m-4">Body Mass Calculator</h4>
         <div class="mb-3">
           <label for="" class="form-label">Email</label>
           <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="abc@mail.com">
