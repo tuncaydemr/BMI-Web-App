@@ -12,7 +12,7 @@
 
 <body>
   <form>
-    <div class="container d-flex align-items-center my-3">
+    <div class="container d-flex align-items-center justify-content-center my-3">
       <div class="card text-center">
         <h4>Body Mass Calculator</h4>
         <div class="mb-3">
