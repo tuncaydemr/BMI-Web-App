@@ -45,7 +45,7 @@ if (isset($_POST['submit'])) {
         ?>
             <div class="card m-auto w-50">
               <div class="card-body bg-danger">
-                <p class="card-text text-white text-center text-uppercase fs-5">Skinny</p>
+                <p class="card-text text-white text-center text-uppercase fs-5">Underweight</p>
               </div>
             </div>
           <?php
