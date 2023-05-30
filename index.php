@@ -12,10 +12,10 @@
 
 <body>
   <form>
-    <div class="container d-flex align-items-center justify-content-center my-3">
-      <div class="card text-center">
-        <h4 class="m-4">Body Mass Calculator</h4>
-        <div class="mb-3">
+    <div class="container d-flex align-items-center justify-content-center">
+      <div class="card">
+        <h4 class="mt-3 mb-5">Body Mass Calculator</h4>
+        <div class="mb-3 w-75">
           <label for="" class="form-label">Email</label>
           <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="abc@mail.com">
           <small id="emailHelpId" class="form-text text-muted">Help text</small>
