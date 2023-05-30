@@ -13,7 +13,7 @@
 <body>
   <form action="index.php" method="post">
     <div class="container d-flex align-items-center justify-content-center">
-      <div class="grid">
+      <div class="card w-50">
         <h4 class="mt-4 mb-5 text-center">Body Mass Calculator</h4>
         <div class="mb-4 w-50 m-auto">
           <label for="weight" class="form-label">Weight</label>
