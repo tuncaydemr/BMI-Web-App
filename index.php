@@ -42,27 +42,27 @@
         <?php
           if ($bmi >= 18.5 && $bmi < 25):
         ?>
-        <div class="card m-auto w-50">
-          <div class="card-body bg-success">
-            <p class="card-text text-white">Text</p>
+          <div class="card m-auto w-50">
+            <div class="card-body bg-success">
+              <p class="card-text text-white">Text</p>
+            </div>
           </div>
-        </div>
         <?php
           elseif ($bmi >= 25 && $bmi < 30):
         ?>
-        <div class="card m-auto w-50">
-          <div class="card-body bg-success">
-            <p class="card-text text-white">Text</p>
+          <div class="card m-auto w-50">
+            <div class="card-body bg-success">
+              <p class="card-text text-white">Text</p>
+            </div>
           </div>
-        </div>
         <?php
           elseif ($bmi >= 30 && $bmi < 40):
         ?>
-        <div class="card m-auto w-50">
-          <div class="card-body bg-success">
-            <p class="card-text text-white">Text</p>
+          <div class="card m-auto w-50">
+            <div class="card-body bg-success">
+              <p class="card-text text-white">Text</p>
+            </div>
           </div>
-        </div>
         <?php
           endif;
         ?>
