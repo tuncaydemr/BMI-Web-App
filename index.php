@@ -23,7 +23,9 @@
           <label for="height" class="form-label">Height</label>
           <input type="text" class="form-control" name="height" id="height" placeholder="Enter Your Height" required>
         </div>
-        <button type="button" class="btn btn-primary w-50">Button</button>
+        <div class="d-flex justify-content-center">
+          <button type="button" name="button" id="button" class="btn btn-primary w-50">Button</button>
+        </div>
       </div>
     </div>
   </form>
