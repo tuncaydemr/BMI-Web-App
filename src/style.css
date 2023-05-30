@@ -6,4 +6,5 @@
 .card {
   background: red;
   width: 100%;
+  height: auto;
 }
