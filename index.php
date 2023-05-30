@@ -1,15 +1,13 @@
 <?php
+  if (isset($_POST['submit'])) {
+    $weight = $_POST['weight'];
+    $height = $_POST['height'];
 
-
-if (isset($_POST['submit'])) {
-  $weight = $_POST['weight'];
-  $height = $_POST['height'];
-
-  if ($weight != "" && $height != "") {
-    $bmi = $weight / ($height * $height);
-    $bmi = round($bmi * 10000, 2);
+    if ($weight != "" && $height != "") {
+      $bmi = $weight / ($height * $height);
+      $bmi = round($bmi * 10000, 2);
+    }
   }
-}
 ?>
 
 <!DOCTYPE html>
@@ -37,9 +35,14 @@ if (isset($_POST['submit'])) {
           <label for="height" class="form-label">Height</label>
           <input type="text" class="form-control" name="height" id="height" pattern="[0-9]*" placeholder="Enter Your Height" value="<?php echo isset($height) ? $height : ''; ?>">
         </div>
-        <div class="mb-4 w-50 m-auto bmi">
+        <div class="w-50 m-auto bmi">
           <label for="bmi" class="form-label">BMI</label>
           <input type="text" class="form-control" name="bmi" id="bmi" value="<?php echo $bmi; ?>" disabled>
+        </div>
+        <div class="card m-auto w-50">
+          <div class="card-body bg-success">
+            <p class="card-text text-white">Text</p>
+          </div>
         </div>
         <div class="d-flex justify-content-center mt-3 mb-5">
           <button type="submit" name="submit" class="btn btn-primary w-50 my-4">Submit</button>
