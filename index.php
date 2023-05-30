@@ -15,8 +15,6 @@ if (isset($_POST['submit'])) {
     $height = $height / 100;
     $bmi = $weight / ($height * $height);
     $bmi = round($bmi, 2);
-
-    echo "<div>Your BMI is $bmi.</div>";
   } else {
     foreach ($errors as $error) {
       echo "<div>$error</div>";
@@ -45,11 +43,11 @@ if (isset($_POST['submit'])) {
         <h3 class="my-5 text-center">Body Mass Calculator</h3>
         <div class="mb-4 w-50 m-auto">
           <label for="weight" class="form-label">Weight</label>
-          <input type="text" class="form-control" name="weight" pattern="\d{3}" placeholder="Enter Your Weight" value="<?php echo isset($weight) ? $weight : ''; ?>" required>
+          <input type="text" class="form-control" name="weight" id="weight" pattern="\d{3}" placeholder="Enter Your Weight" value="<?php echo isset($weight) ? $weight : ''; ?>">
         </div>
         <div class="mb-4 w-50 m-auto">
           <label for="height" class="form-label">Height</label>
-          <input type="text" class="form-control" name="height" placeholder="Enter Your Height" value="<?php echo isset($height) ? $height : ''; ?>" required>
+          <input type="text" class="form-control" name="height" id="height" placeholder="Enter Your Height" value="<?php echo isset($height) ? $height : ''; ?>" >
         </div>
         <div class="mb-4 w-50 m-auto">
           <label for="bmi" class="form-label">BMI</label>
