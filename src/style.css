@@ -1,0 +1,9 @@
+.container {
+  height: 50rem;
+  background: blue;
+}
+
+.card {
+  background: red;
+  width: 100%;
+}
