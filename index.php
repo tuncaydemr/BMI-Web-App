@@ -19,6 +19,7 @@ if (isset($_POST['submit'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Body Mass Calculator</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 
 <body style="background: black;">
@@ -47,12 +48,14 @@ if (isset($_POST['submit'])) {
 
   <script>
     $(() => {
-      if (('#weight' != "") && ('#height' != "")) {
+      $weight = $('#weight').val();
+      $height = $('#height').val();
+      if (($weight != "") && ($height != "")) {
         $('#bmi').css({
           display: 'block'
-        })
+        });
       }
-    })
+    });
   </script>
 </body>
 
