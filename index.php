@@ -15,7 +15,7 @@
     <div class="container d-flex align-items-center justify-content-center">
       <div class="card d-flex justify-content-center">
         <h4 class="mt-3 mb-5 text-center">Body Mass Calculator</h4>
-        <div class="mb-3 w-75 m-auto">
+        <div class="mb-3 w-50 m-auto">
           <label for="" class="form-label">Weight</label>
           <input type="text" class="form-control" name="" id="" placeholder="Enter Your Weight">
         </div>
