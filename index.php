@@ -1,13 +1,13 @@
 <?php
-if (isset($_POST['submit'])) {
-  $weight = $_POST['weight'];
-  $height = $_POST['height'];
+  if (isset($_POST['submit'])) {
+    $weight = $_POST['weight'];
+    $height = $_POST['height'];
 
-  if ($weight != "" && $height != "") {
-    $bmi = $weight / ($height * $height);
-    $bmi = round($bmi * 10000, 2);
+    if ($weight != "" && $height != "") {
+      $bmi = $weight / ($height * $height);
+      $bmi = round($bmi * 10000, 2);
+    }
   }
-}
 ?>
 
 <!DOCTYPE html>
@@ -93,6 +93,19 @@ if (isset($_POST['submit'])) {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"></script>
   <script src="./src/js/script.js"></script>
+
+  <script>
+    $(() => {
+      let $weight = $('#weight').val();
+      let $height = $('#height').val();
+
+      if (($weight == "") || ($height == "")) {
+        $('.bmi').addClass('d-none');
+      } else {
+        $('.bmi').addClass('d-block');
+      }
+    });
+  </script>
 </body>
 
 </html>
