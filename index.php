@@ -1,13 +1,17 @@
 <?php
-if (isset($_POST['submit'])) {
-  $weight = $_POST['weight'];
-  $height = $_POST['height'];
+  $weight = "";
+  $height = "";
+  $bmi = 0;
 
-  if ($weight != "" && $height != "") {
-    $bmi = $weight / ($height * $height);
-    $bmi = round($bmi * 10000, 2);
+  if (isset($_POST['submit'])) {
+    $weight = $_POST['weight'];
+    $height = $_POST['height'];
+
+    if ($weight != "" && $height != "") {
+      $bmi = $weight / ($height * $height);
+      $bmi = round($bmi * 10000, 2);
+    }
   }
-}
 ?>
 
 <!DOCTYPE html>
@@ -19,6 +23,9 @@ if (isset($_POST['submit'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Body Mass Calculator</title>
   <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"></script>
+  <script src="./src/js/script.js"></script>
 </head>
 
 <body style="background: black;">
@@ -39,7 +46,7 @@ if (isset($_POST['submit'])) {
           <input type="text" class="form-control" name="bmi" id="bmi" value="<?php echo $bmi; ?>" disabled>
         </div>
         <?php
-        if ($weight != "" && $height != "" && $bmi != "") :
+        if ($weight != "" && $height != "") :
           if ($bmi < 18.5) {
         ?>
             <div class="card m-auto w-50">
@@ -89,10 +96,6 @@ if (isset($_POST['submit'])) {
       </div>
     </div>
   </form>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"></script>
-  <script src="./src/js/script.js"></script>
 </body>
 
 </html>
