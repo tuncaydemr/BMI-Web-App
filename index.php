@@ -90,9 +90,9 @@ if (isset($_POST['submit'])) {
     </div>
   </form>
 
-  <script src="./src/js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"></script>
+  <script src="./src/js/script.js"></script>
 </body>
 
 </html>
