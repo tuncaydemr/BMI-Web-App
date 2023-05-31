@@ -41,7 +41,7 @@ if (isset($_POST['submit'])) {
           <input type="text" class="form-control" name="bmi" id="bmi" value="<?php echo $bmi; ?>" disabled>
         </div>
         <?php
-        if ($weight != "" && $height != "") :
+        if ($weight != "" && $height != ""):
           if ($bmi < 18.5) {
         ?>
             <div class="card m-auto w-50">
