@@ -6,7 +6,7 @@ $(() => {
     if (($weight != "") || ($height != "")) {
       $('button').attr('enabled');
     } else {
-      $('button').addClass('disabled');
+      $('button').attr('disabled');
     }
   });
 
