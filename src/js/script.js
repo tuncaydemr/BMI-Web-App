@@ -1,6 +1,7 @@
 $(() => {
+  let $weight = $('#weight').val();
+  let $height = $('#height').val();
 
-  
   $('#weight, #height').keypress(() => {
     let $weight = $('#weight').val();
     let $height = $('#height').val();
