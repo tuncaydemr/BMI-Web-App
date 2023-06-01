@@ -3,7 +3,7 @@ $(() => {
   let $height = $('#height').val();
 
 
-    $('#weight, #height').keypress(() => {
+    $('#weight, #height').keyup(() => {
       if (($weight != "") || ($height != "")) {
         $('button').addClass('disabled');
         $('button').removeClass('enabled');
@@ -12,7 +12,7 @@ $(() => {
         $('button').removeClass('disabled');
       }
     });
-  
+
 
   if (($weight != "") && ($height != "")) {
     $('.bmi').addClass('d-block');
