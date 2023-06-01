@@ -4,7 +4,7 @@ $(() => {
 
   $('#weight').on('input', () => {
     let $weight = $(this).val();
-    if (($weight.trim() !== '') || ($height != "")) {
+    if (($weight !== '')) {
       $('button').prop('disabled', false);
     } else {
       $('button').prop('disabled', true);
