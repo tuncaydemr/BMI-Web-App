@@ -1,17 +1,17 @@
 <?php
-  $weight = "";
-  $height = "";
-  $bmi = 0;
+$weight = "";
+$height = "";
+$bmi = 0;
 
-  if (isset($_POST['submit'])) {
-    $weight = $_POST['weight'];
-    $height = $_POST['height'];
+if (isset($_POST['submit'])) {
+  $weight = $_POST['weight'];
+  $height = $_POST['height'];
 
-    if ($weight != "" && $height != "") {
-      $bmi = $weight / ($height * $height);
-      $bmi = round($bmi * 10000, 2);
-    }
+  if ($weight != "" && $height != "") {
+    $bmi = $weight / ($height * $height);
+    $bmi = round($bmi * 10000, 2);
   }
+}
 ?>
 
 <!DOCTYPE html>
@@ -23,8 +23,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Body Mass Calculator</title>
   <link rel="stylesheet" href="./src/css/bootstrap.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"></script>
+
   <script src="./src/js/script.js"></script>
 </head>
 
@@ -35,13 +34,11 @@
         <h3 class="my-5 text-center">Body Mass Calculator</h3>
         <div class="mb-4 w-50 m-auto">
           <label for="weight" class="form-label">Weight</label>
-          <input type="text" class="form-control" name="weight" id="weight" pattern="[0-9]*"
-          placeholder="Enter Your Weight" value="<?php echo isset($weight) ? $weight : ''; ?>">
+          <input type="text" class="form-control" name="weight" id="weight" pattern="[0-9]*" placeholder="Enter Your Weight" value="<?php echo isset($weight) ? $weight : ''; ?>">
         </div>
         <div class="mb-4 w-50 m-auto">
           <label for="height" class="form-label">Height</label>
-          <input type="text" class="form-control" name="height" id="height" pattern="[0-9]*"
-          placeholder="Enter Your Height" value="<?php echo isset($height) ? $height : ''; ?>">
+          <input type="text" class="form-control" name="height" id="height" pattern="[0-9]*" placeholder="Enter Your Height" value="<?php echo isset($height) ? $height : ''; ?>">
         </div>
         <div class="w-50 m-auto bmi">
           <label for="bmi" class="form-label">BMI</label>
@@ -98,6 +95,8 @@
       </div>
     </div>
   </form>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"></script>
 </body>
 
 </html>
