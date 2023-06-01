@@ -11,9 +11,9 @@ $(() => {
   $('#weight, #height').on('input', function() {
     let inputValue = $(this).val();
     if (inputValue.trim() !== '') {
-      $('#myButton').prop('disabled', false);
+      $('button').prop('disabled', false);
     } else {
-      $('#myButton').prop('disabled', true);
+      $('button').prop('disabled', true);
     }
   });
 });
