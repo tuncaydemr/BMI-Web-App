@@ -4,7 +4,7 @@ $(() => {
 
   $('#weight, #height').keyup(() => {
     if (($weight != "") || ($height != "")) {
-      $('button').prop('enabled', true);
+      $('button').prop('disabled', false);
     } else {
       $('button').prop('enabled', false);
     }
