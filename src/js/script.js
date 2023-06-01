@@ -9,7 +9,8 @@ $(() => {
   }
 
   $('#weight, #height').on('input', function() {
-    if ($weight != '' || $height != '') {
+    let inputValue = $(this).val();
+    if (inputValue != '') {
       $('button').prop('disabled', false);
     } else {
       $('button').prop('disabled', true);
