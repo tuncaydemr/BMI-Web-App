@@ -1,5 +1,5 @@
 $(() => {
-  $('#weight, #height').on("input", () => {
+  $('#weight, #height').on('input', () => {
     let $weight = $('#weight').val();
     let $height = $('#height').val();
 
