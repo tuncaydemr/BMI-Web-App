@@ -2,7 +2,7 @@ $(() => {
   let $weight = $('#weight').val();
   let $height = $('#height').val();
 
-  $('#weight, #height').keyup(() => {
+  $('#weight, #height').on('input', () => {
     if (($weight != "") || ($height != "")) {
       $('button').prop('disabled', false);
     } else {
