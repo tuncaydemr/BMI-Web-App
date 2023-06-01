@@ -5,10 +5,10 @@ $(() => {
   $('#weight, #height').keypress(() => {
     if (($weight != "") || ($height != "")) {
       $('.bmi').addClass('d-block');
-      $('button').addClass('disabled');
+      $('button').addClass('enabled');
     } else {
       $('.bmi').addClass('d-none');
-      $('button').addClass('enabled');
+      $('button').addClass('disabled');
     }
   });
 
