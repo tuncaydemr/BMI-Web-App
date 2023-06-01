@@ -4,6 +4,7 @@ $(() => {
 
   if (($weight == "") || ($height == "")) {
     $('.bmi').addClass('d-none');
+    $('button').addClass('disabled');
   } else {
     $('.bmi').addClass('d-block');
   }
