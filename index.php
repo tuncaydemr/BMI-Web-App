@@ -100,6 +100,7 @@
           <?php
             else :
           ?>
+            <button type="submit" name="submit" id="submit" class="btn btn-primary w-50 my-4 py-3" disabled>Submit</button>
           <?php
             endif;
           ?>
