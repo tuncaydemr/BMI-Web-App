@@ -8,6 +8,7 @@ $(() => {
       $('button').removeClass('enabled');
     } else {
       $('button').addClass('enabled');
+      $('button').removeClass('disabled');
     }
   });
 
