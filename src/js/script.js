@@ -5,6 +5,7 @@ $(() => {
   $('#weight, #height').keypress(() => {
     if (($weight != "") || ($height != "")) {
       $('button').addClass('disabled');
+      $('button').removeClass('enabled');
     } else {
       $('button').addClass('enabled');
     }
