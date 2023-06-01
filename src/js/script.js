@@ -3,8 +3,8 @@ $(() => {
   let $height = $('#height').val();
 
   $('#weight, #height').keypress(() => {
-    let $weight = $('#weight').val();
-    let $height = $('#height').val();
+    $weight;
+    $height;
 
     if (($weight != "") || ($height != "")) {
       $('.bmi').addClass('d-block');
