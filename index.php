@@ -96,11 +96,11 @@
           <?php
             if ($weight != "" || $height != "") :
           ?>
-            <button type="submit" name="submit" id="submit" class="btn btn-primary w-50 my-4 py-3">Submit</button>
+            <button type="submit" name="submit" class="btn btn-primary w-50 my-4 py-3">Submit</button>
           <?php
             else :
           ?>
-            <button type="submit" name="submit" id="submit" class="btn btn-primary w-50 my-4 py-3" disabled>Submit</button>
+            <button type="submit" name="submit" class="btn btn-primary w-50 my-4 py-3" disabled>Submit</button>
           <?php
             endif;
           ?>
