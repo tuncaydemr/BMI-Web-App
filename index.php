@@ -93,7 +93,13 @@
         endif;
         ?>
         <div class="d-flex justify-content-center mt-3 mb-5">
-          <button type="submit" name="submit" id="submit" class="btn btn-primary w-50 my-4 py-3">Submit</button>
+          <?php
+            if ($weight != "" || $height != ""):
+          ?>
+            <button type="submit" name="submit" id="submit" class="btn btn-primary w-50 my-4 py-3">Submit</button>
+          <?php
+            endif;
+          ?>
         </div>
       </div>
     </div>
