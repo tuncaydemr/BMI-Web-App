@@ -7,4 +7,13 @@ $(() => {
   } else {
     $('.bmi').addClass('d-block');
   }
+
+  $('#weight, #height').on('input', function() {
+    let inputValue = $(this).val();
+    if (inputValue.trim() !== '') {
+      $('#myButton').prop('disabled', false);
+    } else {
+      $('#myButton').prop('disabled', true);
+    }
+  });
 });
