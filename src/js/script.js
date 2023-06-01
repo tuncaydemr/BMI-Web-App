@@ -7,5 +7,6 @@ $(() => {
     $('button').addClass('disabled');
   } else {
     $('.bmi').addClass('d-block');
+    $('button').addClass('enabled');
   }
 });
