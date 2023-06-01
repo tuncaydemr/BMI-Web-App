@@ -35,11 +35,13 @@
         <h3 class="my-5 text-center">Body Mass Calculator</h3>
         <div class="mb-4 w-50 m-auto">
           <label for="weight" class="form-label">Weight</label>
-          <input type="text" class="form-control" name="weight" id="weight" pattern="[0-9]*" placeholder="Enter Your Weight" value="<?php echo isset($weight) ? $weight : ''; ?>">
+          <input type="text" class="form-control" name="weight" id="weight" pattern="[0-9]*"
+          placeholder="Enter Your Weight" value="<?php echo isset($weight) ? $weight : ''; ?>">
         </div>
         <div class="mb-4 w-50 m-auto">
           <label for="height" class="form-label">Height</label>
-          <input type="text" class="form-control" name="height" id="height" pattern="[0-9]*" placeholder="Enter Your Height" value="<?php echo isset($height) ? $height : ''; ?>">
+          <input type="text" class="form-control" name="height" id="height" pattern="[0-9]*"
+          placeholder="Enter Your Height" value="<?php echo isset($height) ? $height : ''; ?>">
         </div>
         <div class="w-50 m-auto bmi">
           <label for="bmi" class="form-label">BMI</label>
