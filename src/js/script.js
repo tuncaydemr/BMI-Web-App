@@ -6,7 +6,7 @@ $(() => {
     if (($weight != "") || ($height != "")) {
       $('button').prop('disabled', false);
     } else {
-      $('button').prop('enabled', false);
+      $('button').prop('disabled', true);
     }
   });
 
