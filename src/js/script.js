@@ -4,9 +4,9 @@ $(() => {
 
   $('#weight, #height').keypress(() => {
     if (($weight != "") || ($height != "")) {
-      $('button').addClass('enabled');
-    } else {
       $('button').addClass('disabled');
+    } else {
+      $('button').addClass('enabled');
     }
   });
 
