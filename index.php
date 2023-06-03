@@ -31,7 +31,7 @@
 
 <body>
   <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-    <div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
+    <div class="container d-flex align-items-center justify-content-center">
       <div class="card w-50">
         <h3 class="my-5 text-center">Body Mass Calculator</h3>
         <div class="mb-4 w-50 m-auto">
