@@ -23,12 +23,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Body Mass Calculator</title>
   <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./src/css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"></script>
   <script src="./src/js/script.js"></script>
 </head>
 
-<body style="background: black;">
+<body>
   <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
     <div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
       <div class="card w-50">
