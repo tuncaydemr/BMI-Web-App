@@ -7,3 +7,7 @@
 body {
   background: black;
 }
+
+.container {
+  height: 100vh;
+}
