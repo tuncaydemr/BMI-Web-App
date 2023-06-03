@@ -46,7 +46,7 @@
         </div>
         <div class="w-50 m-auto bmi">
           <label for="bmi" class="form-label">BMI</label>
-          <input type="text" class="form-control" name="bmi" id="bmi" value="<?php echo $bmi; ?>" disabled>
+          <input type="text" class="form-control" name="bmi" value="<?php echo $bmi; ?>" disabled>
         </div>
         <?php
         if ($weight != "" && $height != "") :
