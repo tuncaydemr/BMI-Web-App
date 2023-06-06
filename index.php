@@ -49,7 +49,7 @@
           <input type="text" class="form-control" name="bmi" disabled>
         </div>
         <?php
-        if ($weight != "" && $height != "" && $bmi == false) :
+        if ($weight != "" && $height != "" && $bmi != true) :
           if ($bmi < 18.5) {
         ?>
             <div class="card m-auto w-50">
