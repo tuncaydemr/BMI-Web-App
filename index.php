@@ -1,6 +1,5 @@
 <?php
   $weight = $height = "";
-
   $bmi = 0;
 
   if (isset($_POST['submit'])) {
