@@ -42,7 +42,7 @@
         <div class="mb-4 w-50 m-auto">
           <label for="height" class="form-label">Height</label>
           <input type="text" class="form-control" name="height" id="height" pattern="[0-9]*"
-          placeholder="Enter Your Height" value="<?php echo isset($height) ? $height : ''; ?>">
+          placeholder="Enter Your Height">
         </div>
         <div class="w-50 m-auto bmi">
           <label for="bmi" class="form-label">BMI</label>
