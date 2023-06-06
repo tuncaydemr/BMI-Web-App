@@ -37,19 +37,19 @@
         <div class="mb-4 w-50 m-auto">
           <label for="weight" class="form-label">Weight</label>
           <input type="text" class="form-control" name="weight" id="weight" pattern="[0-9]*"
-          placeholder="Enter Your Weight">
+          placeholder="Enter Your Weight" value="<?php echo isset($weight) ? $weight : ''; ?>">
         </div>
         <div class="mb-4 w-50 m-auto">
           <label for="height" class="form-label">Height</label>
           <input type="text" class="form-control" name="height" id="height" pattern="[0-9]*"
-          placeholder="Enter Your Height">
+          placeholder="Enter Your Height" value="<?php echo isset($height) ? $height : ''; ?>">
         </div>
         <div class="w-50 m-auto bmi">
           <label for="bmi" class="form-label">BMI</label>
-          <input type="text" class="form-control" name="bmi" disabled>
+          <input type="text" class="form-control" name="bmi" value="<?php echo $bmi; ?>" disabled>
         </div>
         <?php
-        if ($weight != "" && $height != "" && $bmi == 1) :
+        if ($weight != "" && $height != "") :
           if ($bmi < 18.5) {
         ?>
             <div class="card m-auto w-50">
