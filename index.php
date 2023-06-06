@@ -37,7 +37,7 @@
         <div class="mb-4 w-50 m-auto">
           <label for="weight" class="form-label">Weight</label>
           <input type="text" class="form-control" name="weight" id="weight" pattern="[0-9]*"
-          placeholder="Enter Your Weight" value="<?php echo $weight; ?>">
+          placeholder="Enter Your Weight" value="<?php echo isset($weight) ? $weight : ''; ?>">
         </div>
         <div class="mb-4 w-50 m-auto">
           <label for="height" class="form-label">Height</label>
